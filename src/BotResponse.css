@@ -1,0 +1,79 @@
+@keyframes topFadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    25% {
+      opacity: 0.3;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    75% {
+      
+      opacity: 0.7;
+    }
+  
+    100% {
+      opacity: 100;
+    }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .App-BotResponse {
+    max-height:620px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    margin: 10;
+  }
+  .App-BotResponse::-webkit-scrollbar {
+    display: none;
+  }
+
+.App-BotResponse-Activity {
+    overflow: hidden;
+    font-size: 20px;
+    margin: 0 auto;
+    white-space: nowrap; 
+    word-wrap: break-word;
+    animation: topFadeIn,
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    animation-duration: 4s;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+    /* animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s; */
+  }
+
+  .App-BotResponse-Attachments {
+    list-style-type: none;
+    margin: 0;
+    zoom: 2;
+  }
+
+  .App-BotResponse-Attachments .App-BotResponse-Attachment {
+    background-color: White;
+    /* border-radius: 1vmin; */
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    margin: 2vmin 2vmin 2vmin 2vmin;
+    width: 40vmin;
+    justify-content: center;
+  }
+  
+  .App-BotResponse-Attachments li:last-child {
+    padding-right: 2vmin;
+  }

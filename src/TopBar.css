@@ -1,0 +1,7 @@
+.root-MuiAppBar-root {
+    z-index: 1;
+}
+
+.MuiToolbar-root {
+    min-height: 50px;
+}

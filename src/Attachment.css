@@ -1,0 +1,23 @@
+.MuiCardHeader-title {
+    font-size: 7px;
+}
+
+.MuiCardHeader-root {
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+.MuiCardHeader-subheader {
+    font-size: 5px;
+    font-weight: bold;
+}
+
+.MuiCardContent-root {
+    padding-top:3px
+}
+
+.email_recipient {
+    font-size: 5px;
+    font-weight: bold;
+    margin:12px
+}
